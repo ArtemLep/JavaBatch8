@@ -11,7 +11,7 @@ public class Task2 {
 			day++;
 			if (day == 6 || day == 7) {
 				System.out.println("I dont need day off any more");
-				
+				break;
 			}
 		}
 	}
