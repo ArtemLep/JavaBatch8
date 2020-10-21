@@ -5,18 +5,16 @@ import java.util.Scanner;
 public class Tas {
 	public static void main(String[] args) {
 		Scanner inp;
-		int x = 0;
-		System.out.print("In:");
+		int x;
 		inp = new Scanner(System.in);
+		System.out.print("In:");
+
+		// write your code below
 		x = inp.nextInt();
-		for (int i = 0; i <= x; i++) {
-			if (x >=i) {
-				continue;
-			
-			}
-			System.out.println(i);
+		for (int i = x-1; i >= x/113; i--) {
+			System.out.print(i + " ");
 		}
+		
 
 	}
-
 }
