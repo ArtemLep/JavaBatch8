@@ -4,15 +4,13 @@ public class GroupTask5 {
     public static void main(String[] args) {
         /*Write a java program to find the second largest number in the array?
          */
-        int arr[] = { 14, 46, 47, 86, 92, 52, 48, 36, 66, 85 };
+        int arr[] = {14, 46, 47, 86, 92, 52, 48, 36, 66, 85};
         int largest = arr[0];
         int secondLargest = arr[0];
 
-        System.out.println("The given array is:" );
+        System.out.println("The given array is:");
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+"\t");
-        }
-        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
 
             if (arr[i] > largest) {
                 secondLargest = largest;
