@@ -25,10 +25,10 @@ public class EnhancedForLoop {
 		System.out.println();
 
 		System.out.println("===========Enhaced For Loop=============");
-		
-		boolean[] arrayOfBoolean= {true,true,false,false,true};
-		for(boolean bool:arrayOfBoolean) {
-			System.out.print(bool+",");
+
+		boolean[] arrayOfBoolean = { true, true, false, false, true };
+		for (boolean bool : arrayOfBoolean) {
+			System.out.print(bool + ",");
 		}
 	}
 }
