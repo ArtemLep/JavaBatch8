@@ -25,4 +25,9 @@ public class Arrays {
 		System.out.println(array[0]);
 	}
 
+	public static void sort(int[][] data) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
