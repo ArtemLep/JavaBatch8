@@ -12,6 +12,13 @@ public class HomeWork {
             reverse = reverse + input.charAt(i);
         }
         System.out.println("Reversed string is:" + reverse);
+        System.out.println("=========2 way============");
+
+        String input1 = "Hello World";
+        StringBuilder input2 = new StringBuilder();
+        input2.append(input);
+        input2 = input2.reverse();
+        System.out.println(input2);
         System.out.println("===========================");
 
         /*How would you reverse a String word by word?
@@ -24,7 +31,7 @@ public class HomeWork {
             reversedString = " " + words[i] + reversedString;
         }
         System.out.print("Reversed string word by word: ");
-        System.out.println(reverse);
+        System.out.println(reversedString);
         System.out.println("===========================");
 
         /*How would you swap  2 strings without a temporary variable?
