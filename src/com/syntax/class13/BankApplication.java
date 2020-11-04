@@ -9,7 +9,6 @@ public class BankApplication {
         burjusAccount.balance = 1000000;
         burjusAccount.typeOfAccount = "checking";
         burjusAccount.limit = 125;
-        //break be back before 8:50
         boolean isLoggedIn = burjusAccount
                 .login("abc123",
                         "abfjad");
