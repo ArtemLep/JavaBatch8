@@ -2,6 +2,8 @@ package com.syntax.class17;
 
 import javax.sound.midi.Soundbank;
 
+import static com.syntax.class17.Students.numberOfStudents;
+
 public class Main {
     public static void main(String[] args) {
         Task1 task1 = new Task1();
@@ -42,29 +44,34 @@ public class Main {
         Anna.printInfo();
         System.out.println("===================");
 
-        Employee employee=new Employee();
-        employee.empID=1;
-        employee.salary=4000;
-        employee.printInfo();
+        Employee employee = new Employee();
+        employee.empID = 1;
+        employee.salary = 4000;
+        Employee.CEO = "Sumair";
 
-        Employee employee1=new Employee();
-        employee1.empID=2;
-        employee1.salary=2000;
-        employee1.printInfo();
+        Employee employee1 = new Employee();
+        employee1.empID = 2;
+        employee1.salary = 2000;
+        System.out.println(employee1.CEO);
 
         System.out.println("===================");
-        Students Art=new Students();
-        Art.studentID=1;
-        Art.studentName="Artem";
-        Art.printInfo();
-        Art.numberOfStudents=1;
+        Students Art = new Students();
+        Art.studentID = 123;
+        Art.studentName = "Artem";
+        Students.numberOfStudents++;
+        System.out.println(Art.studentID);
+        System.out.println(Art.studentName);
+        System.out.println(Students.numberOfStudents);
 
-        Students Ann=new Students();
-        Ann.studentID=2;
-        Ann.studentName="Ann";
-        Ann.printInfo();
-        Art.numberOfStudents++;
 
+        Students Ann = new Students();
+        Ann.studentID = 2345;
+        Ann.studentName = "Anna";
+        Students.numberOfStudents++;
+
+        System.out.println(Ann.studentID);
+        System.out.println(Ann.studentName);
+        System.out.println(Students.numberOfStudents);
 
     }
 }
