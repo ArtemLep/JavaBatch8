@@ -24,6 +24,7 @@ public class StudentClassTask2 {
 
     void printGradeAverage() {
         double avg = (subject1 + subject2 + subject3) / 3;
+        
         System.out.println("Average marks for " + name + " are " + avg);
     }
 
