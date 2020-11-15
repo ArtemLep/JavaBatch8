@@ -1,15 +1,31 @@
 package com.syntax.class22;
 
 public class Main {
-   static void print(String country) {
+String school;
+    int batch;
+    int years;
+    String LastDayOfSchool;
+
+    Main() {
     }
 
-    static  void print1(String continent){
+    Main(String school,int batch, int years,String LastDayOfSchool) {
+        this.school=school;
+        this.batch=batch;
+        this.years=years;
+        this.LastDayOfSchool=LastDayOfSchool;
+        System.out.println(school+" ");
     }
-    static void displayInfo(String country,String continent){
-        System.out.println(country+" located on "+continent+ " continent");
-    }
+
+
+
+
     public static void main(String[] args) {
+        Main task1 = new Main();
+        task1.school="Syntax";
+        task1.batch=6;
+        task1.years=2020;
+        task1.LastDayOfSchool="07/30/2020";
+        System.out.println(task1.school+" "+task1.batch+" "+task1.years+" "+task1.LastDayOfSchool);
 
-displayInfo("Marocco","Africa");  }
-}
+}	}
