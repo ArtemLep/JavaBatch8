@@ -1,15 +1,23 @@
 package com.syntax.class28;
+interface ParentInterface{
+    void parentMethod();
+}
+class   ChildInterface implements ParentInterface{
 
-public class Main {
+    @Override
+    public void parentMethod() {
+        System.out.println("Parent Method-welcome to Syntax");
+    }
+
+    void childMethod() {
+        System.out.println("Child Method-hello Syntax");
+    }
+
+}
+class Main {
     public static void main(String[] args) {
-        PrintInfo printInfo=new Student();
-        printInfo.printName();
-        printInfo.printNumber();
-        printInfo.printAdress();
-        System.out.println("================================");
-        PrintInfo printInfo1=new Employee();
-        printInfo1.printName();
-        printInfo1.printNumber();
-        printInfo1.printAdress();
+        ChildInterface childInterface=new ChildInterface();
+        childInterface.parentMethod();
+        childInterface.childMethod();
     }
 }
