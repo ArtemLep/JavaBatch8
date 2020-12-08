@@ -8,7 +8,7 @@ import java.util.LinkedList;
 
 public class LinkedListDemo {
     public static void main(String[] args) {
-
+        System.out.println("0 1 1 2 3 5 8 13 21 34 ");
         LinkedList<String> cities=new LinkedList<>();
         cities.add("Tampa");
         cities.add("Las Vegas");
