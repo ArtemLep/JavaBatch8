@@ -1,30 +1,39 @@
 package com.syntax.class01;
 
+
+
 import java.util.*;
 
 class Main {
     public static void main(String[] args) {
+        List <Map<String,Object>> dataList = new ArrayList<Map<String,Object>>();
 
-        Map<String, String> map = new HashMap<>();
+        Map<String, Object> appleMap = new HashMap<String, Object>();
+        appleMap.put("Items", "Apple");
+        appleMap.put("Price", 20.00);
+        appleMap.put("Quantity", 10);
 
-        map.put("ONE","AAA");
-        map.put("TWO","BBB");
-        map.put("THREE","CCC");
-        map.put("FOUR","DDD");
-        map.put("FIVE","EEE");
-        System.out.println("HashMap Before Remove :");
-        Set<Map.Entry<String, String>> setEntry = map.entrySet();
+        dataList.add(appleMap);
 
-        String value;
-        for (Map.Entry<String, String> entry : setEntry) {
-            System.out.println(entry.getKey()+ ":" + entry.getValue());
+        Map<String, Object> orangeMap = new HashMap<String, Object>();
+        orangeMap.put("Items", "Orange");
+        orangeMap.put("Price", 21.99);
+        orangeMap.put("Quantity", 10);
+
+        dataList.add(orangeMap);
+
+        // find purchase total Price.
+        double purchaseTotalPrice = 0;
+
+        for (Map<String, Object> map : dataList) {
+            String items = map.get("Items").toString();
+            double price = Double.parseDouble(map.get("Price").toString());
+            double quantity = Double.parseDouble(map.get("Quantity").toString());
+            double lineTotal = price * quantity;
+
+            System.out.println("Items: " + items + " Price: " + price + " Quantity: " + quantity + " SubTotal: " + lineTotal);
+            purchaseTotalPrice += lineTotal;
         }
-        System.out.println("HashMap After Remove :");
-        map.remove("ONE");
-        map.remove("FOUR");
-        for (Map.Entry<String, String> entry1: setEntry) {
-            System.out.println(entry1.getKey()+ " : "+entry1.getValue() );
-        };
-
+        System.out.println("Your Purchase total : " + purchaseTotalPrice);
     }
 }
