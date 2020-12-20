@@ -13,7 +13,7 @@ import java.io.IOException;
 public class ExcelFileHandling {
     public static void main(String[] args) throws IOException {
         //Break till 12:30
-        String path="C:\\Users\\Owner\\eclipse-workspace\\JavaBatch8\\src\\com\\syntax\\class35\\Test.xlsx";
+        String path = "C:\\Users\\Owner\\eclipse-workspace\\JavaBatch8\\src\\com\\syntax\\class36\\PersonData.xlsx";
         System.out.println(path);
         FileInputStream fileInputStream=new FileInputStream(path);
         XSSFWorkbook workbook=new XSSFWorkbook(fileInputStream);
